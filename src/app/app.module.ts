@@ -12,6 +12,8 @@ import { HeaderComponent } from './header/header.component';
 import { TestRunnerComponent } from './test-runner/test-runner.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TestTreeComponent } from './test-tree/test-tree.component';
+import { MatTreeModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HeaderComponent,
     TestRunnerComponent,
     LayoutComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TestTreeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     CovalentModule,
+    MatTreeModule,
     BrowserAnimationsModule
   ],
   providers: [],
