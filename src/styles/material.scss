@@ -1,0 +1,19 @@
+// Include non-theme styles for core.
+@include mat-core();
+
+mat-toolbar-row {
+  justify-content: space-between;
+}
+
+.mat-card {
+  border-radius: 2px !important;
+}
+
+.mat-card-content.mat-card-content-flat {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.mat-card-search-title {
+  margin-bottom: 0px !important;
+}

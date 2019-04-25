@@ -1,0 +1,115 @@
+<td-layout>
+  <td-navigation-drawer flex sidenavTitle="Fixate">
+    <mat-nav-list>
+      <a *ngFor="let item of routes" mat-list-item>
+        <mat-icon>{{item.icon}}</mat-icon>{{item.title}}
+      </a>
+    </mat-nav-list>
+    <div td-navigation-drawer-menu>
+      <mat-nav-list>
+        <a *ngFor="let item of usermenu" mat-list-item>
+          <mat-icon>{{item.icon}}</mat-icon>{{item.title}}
+        </a>
+      </mat-nav-list>
+    </div>
+  </td-navigation-drawer>
+  <td-layout-nav>
+    <div td-toolbar-content layout="row" layout-align="start center" flex>
+      <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-icon [routerLink]="['/']" class="mat-icon-logo cursor-pointer"></mat-icon>
+      <span [routerLink]="['/']" class="cursor-pointer">Fixate</span>
+    </div>
+    <td-layout-manage-list #manageList>
+      <mat-toolbar td-sidenav-content>
+        <span>Tests</span>
+      </mat-toolbar>
+      <mat-nav-list td-sidenav-content>
+        <div>Test Tree here</div>
+      </mat-nav-list>
+      <mat-toolbar>
+        <div layout="row" layout-align="start center" flex>
+          <button mat-icon-button tdLayoutManageListOpen [hideWhenOpened]="true">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+          <span>Active Test Name here</span>
+          <span flex></span>
+          <button mat-icon-button>
+            <mat-icon>settings</mat-icon>
+          </button>
+        </div>
+      </mat-toolbar>
+      <div layout-gt-sm="row" tdMediaToggle="gt-xs" [mediaClasses]="['push-sm']">
+        <div flex-gt-sm="60">
+          <mat-card>
+            <mat-card-title>Products Sales</mat-card-title>
+            <mat-card-subtitle>usage stats for our products</mat-card-subtitle>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+              card content
+            </mat-card-content>
+            <mat-divider></mat-divider>
+            <mat-card-actions>
+              <a mat-button color="accent" class="text-upper" [routerLink]="['/']">
+                <span>View More</span>
+              </a>
+            </mat-card-actions>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Customer Activity</mat-card-title>
+            <mat-card-subtitle>Recent activity from select members</mat-card-subtitle>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+              card content
+            </mat-card-content>
+            <mat-divider></mat-divider>
+            <mat-card-actions>
+              <a mat-button color="accent" class="text-upper" [routerLink]="['/']">
+                <span>View More</span>
+              </a>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div flex-gt-sm="40">
+          <mat-card>
+            <mat-card-title>Alerts</mat-card-title>
+            <mat-card-subtitle>Items requiring attention</mat-card-subtitle>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+              card content
+            </mat-card-content>
+            <mat-divider></mat-divider>
+            <mat-card-actions>
+              <a mat-button color="accent" class="text-upper" [routerLink]="['/']">
+                <span>View More</span>
+              </a>
+            </mat-card-actions>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Favorites</mat-card-title>
+            <mat-card-subtitle>Your favorite products</mat-card-subtitle>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+              card content
+            </mat-card-content>
+            <mat-divider></mat-divider>
+            <mat-card-actions>
+              <a mat-button color="accent" class="text-upper" [routerLink]="['/']">
+                <span>View More</span>
+              </a>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+      <td-layout-footer-inner>
+        Optional inner footer
+      </td-layout-footer-inner>
+    </td-layout-manage-list>
+    <td-layout-footer>
+      <div layout="row" layout-align="start center">
+        <span class="mat-caption">Copyright &copy; 2017 Teradata. All rights reserved</span>
+      </div>
+    </td-layout-footer>
+  </td-layout-nav>
+</td-layout>

@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+
+.abstract-background {
+  background-image: url("https://images.pexels.com/photos/1919287/pexels-photo-1919287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+}
+
+.mat-icon {
+  &.mat-icon-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@import "theme.scss";
+@import "material.scss";
+@import "covalent.scss";
+@import "utils/base.scss";
+@import "utils/responsive.scss";
+@import "utils/spacing.scss";

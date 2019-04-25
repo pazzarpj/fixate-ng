@@ -1,0 +1,13 @@
+@include covalent-core();
+@include covalent-utilities();
+@include covalent-layout();
+@include covalent-colors();
+
+// Override or extend existing covalent css styles
+.td-navigation-drawer-name {
+  margin-top: 6px;
+}
+
+.td-data-table-row.even {
+  background-color: rgba(0, 0, 0, 0.04);
+}
