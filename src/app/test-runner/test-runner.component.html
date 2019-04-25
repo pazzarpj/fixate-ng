@@ -1,6 +1,17 @@
-<div layout-gt-sm="row" tdMediaToggle="gt-xs" [mediaClasses]="['push-sm']">
-  <div flex-gt-sm="60">
-    <mat-card>
+<!-- <div fxLayout="row" fxLayoutAlign="center center" class="login-container"> -->
+<td-layout>
+  <!-- <div layout-gt-sm="row" tdMediaToggle="gt-xs" [mediaClasses]="['push-sm']"> -->
+  <!-- <div flex-gt-sm="60"> -->
+  <mat-toolbar>
+    <div layout="row" layout-align="start center" flex>
+      <button mat-button tdLayoutManageListToggle>
+        <mat-icon>Tog</mat-icon>
+      </button>
+      <span>Active Test Name here</span>
+    </div>
+  </mat-toolbar>
+  <app-instruction-card></app-instruction-card>
+  <!-- <mat-card>
       <mat-card-title>Products Sales</mat-card-title>
       <mat-card-subtitle>usage stats for our products</mat-card-subtitle>
       <mat-divider></mat-divider>
@@ -57,6 +68,6 @@
           <span>View More</span>
         </a>
       </mat-card-actions>
-    </mat-card>
-  </div>
-</div>
+    </mat-card> -->
+  <!-- </div> -->
+</td-layout>
