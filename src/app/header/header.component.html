@@ -1,0 +1,16 @@
+<td-layout>
+  <td-navigation-drawer flex sidenavTitle="Fixate">
+    <mat-nav-list>
+      <a *ngFor="let item of routes" mat-list-item>
+        <mat-icon>{{item.icon}}</mat-icon>{{item.title}}
+      </a>
+    </mat-nav-list>
+    <div td-navigation-drawer-menu>
+      <mat-nav-list>
+        <a *ngFor="let item of usermenu" mat-list-item>
+          <mat-icon>{{item.icon}}</mat-icon>{{item.title}}
+        </a>
+      </mat-nav-list>
+    </div>
+  </td-navigation-drawer>
+</td-layout>

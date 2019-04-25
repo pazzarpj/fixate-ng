@@ -8,12 +8,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InstructionCardComponent } from './instruction-card/instruction-card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import { TestRunnerComponent } from './test-runner/test-runner.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InstructionCardComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent,
+    TestRunnerComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
