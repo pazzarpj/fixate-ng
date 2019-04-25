@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { TestRunnerComponent } from './test-runner/test-runner.component';
 import { LayoutComponent } from './layout/layout.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LayoutComponent } from './layout/layout.component';
     DashboardComponent,
     HeaderComponent,
     TestRunnerComponent,
-    LayoutComponent
+    LayoutComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
