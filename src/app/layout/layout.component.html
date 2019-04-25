@@ -21,15 +21,7 @@
       <mat-icon [routerLink]="['/']" class="mat-icon-logo cursor-pointer"></mat-icon>
       <span [routerLink]="['/']" class="cursor-pointer">Fixate</span>
     </div>
-    <td-layout-manage-list #manageList>
-      <mat-toolbar td-sidenav-content>
-        <span>Tests</span>
-      </mat-toolbar>
-      <mat-nav-list td-sidenav-content>
-        <div>Test Tree here</div>
-      </mat-nav-list>
-      <router-outlet></router-outlet>
-    </td-layout-manage-list>
+    <router-outlet></router-outlet>
     <td-layout-footer>
       <div layout="row" layout-align="start center">
         <span class="mat-caption">Progress bar here</span>

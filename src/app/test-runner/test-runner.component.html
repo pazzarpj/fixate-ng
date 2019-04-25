@@ -1,73 +1,19 @@
-<!-- <div fxLayout="row" fxLayoutAlign="center center" class="login-container"> -->
 <td-layout>
-  <!-- <div layout-gt-sm="row" tdMediaToggle="gt-xs" [mediaClasses]="['push-sm']"> -->
-  <!-- <div flex-gt-sm="60"> -->
-  <mat-toolbar>
-    <div layout="row" layout-align="start center" flex>
-      <button mat-button tdLayoutManageListToggle>
-        <mat-icon>Tog</mat-icon>
-      </button>
-      <span>Active Test Name here</span>
-    </div>
-  </mat-toolbar>
-  <app-instruction-card></app-instruction-card>
-  <!-- <mat-card>
-      <mat-card-title>Products Sales</mat-card-title>
-      <mat-card-subtitle>usage stats for our products</mat-card-subtitle>
-      <mat-divider></mat-divider>
-      <mat-card-content>
-        card content
-      </mat-card-content>
-      <mat-divider></mat-divider>
-      <mat-card-actions>
-        <a mat-button color="accent" class="text-upper" [routerLink]="['/']">
-          <span>View More</span>
-        </a>
-      </mat-card-actions>
-    </mat-card>
-    <mat-card>
-      <mat-card-title>Customer Activity</mat-card-title>
-      <mat-card-subtitle>Recent activity from select members</mat-card-subtitle>
-      <mat-divider></mat-divider>
-      <mat-card-content>
-        card content
-      </mat-card-content>
-      <mat-divider></mat-divider>
-      <mat-card-actions>
-        <a mat-button color="accent" class="text-upper" [routerLink]="['/']">
-          <span>View More</span>
-        </a>
-      </mat-card-actions>
-    </mat-card>
-  </div>
-  <div flex-gt-sm="40">
-    <mat-card>
-      <mat-card-title>Alerts</mat-card-title>
-      <mat-card-subtitle>Items requiring attention</mat-card-subtitle>
-      <mat-divider></mat-divider>
-      <mat-card-content>
-        card content
-      </mat-card-content>
-      <mat-divider></mat-divider>
-      <mat-card-actions>
-        <a mat-button color="accent" class="text-upper" [routerLink]="['/']">
-          <span>View More</span>
-        </a>
-      </mat-card-actions>
-    </mat-card>
-    <mat-card>
-      <mat-card-title>Favorites</mat-card-title>
-      <mat-card-subtitle>Your favorite products</mat-card-subtitle>
-      <mat-divider></mat-divider>
-      <mat-card-content>
-        card content
-      </mat-card-content>
-      <mat-divider></mat-divider>
-      <mat-card-actions>
-        <a mat-button color="accent" class="text-upper" [routerLink]="['/']">
-          <span>View More</span>
-        </a>
-      </mat-card-actions>
-    </mat-card> -->
-  <!-- </div> -->
+  <td-layout-manage-list #manageList>
+    <mat-toolbar td-sidenav-content>
+      <span>Tests</span>
+    </mat-toolbar>
+    <mat-nav-list td-sidenav-content>
+      <div>Test Tree here</div>
+    </mat-nav-list>
+    <mat-toolbar>
+      <div layout="row" layout-align="start center" flex>
+        <button mat-button tdLayoutManageListToggle>
+          <mat-icon>Tog</mat-icon>
+        </button>
+        <span>Active Test Name here</span>
+      </div>
+    </mat-toolbar>
+    <app-instruction-card></app-instruction-card>
+  </td-layout-manage-list>
 </td-layout>
